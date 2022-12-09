@@ -5,7 +5,7 @@ inputs:
     description: 'The S3 bucket name'
     required: true
   bucket-region:
-    description: 'The ergion of the S3 bucket'
+    description: 'The region of the S3 bucket'
     required: 'us-east-1'
   dist-folder:
     description: 'The folder containing the deployable files.'
