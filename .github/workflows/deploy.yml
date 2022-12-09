@@ -68,7 +68,7 @@ jobs:
       - name: Get AWS permission
         uses: aws-action/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::020697060985:role/GitHubDemo1
+          role-to-assume: arn:aws:iam::020697060985:role/GitHubDemo2
           aws-region: eu-central-1
       - name: Deploy site
         id: deploy
@@ -83,4 +83,3 @@ jobs:
       - name: Output information
         run: |
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
-
